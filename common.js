@@ -42,10 +42,31 @@ $(function () {
 // sec3 마우스오버
 
 $(function(){
-  $('.swiper-button a').mouseenter(function(){
-    $('.sec3_cricleimg>img').attr('src', './img/source/can_open.png');
+  $('.btn1 a').mouseenter(function(){
+    $('.sec3_cricleimg>img').attr('src', './img/source/CAN_open_1.png');
     $('.p_list').stop().css('opacity', '0');
   });
+
+  $('.btn2 a').mouseenter(function(){
+    $('.sec3_cricleimg>img').attr('src', './img/source/CAN_open_4.png');
+    $('.p_list').stop().css('opacity', '0');
+  });
+
+  $('.btn3 a').mouseenter(function(){
+    $('.sec3_cricleimg>img').attr('src', './img/source/CAN_open_2.png');
+    $('.p_list').stop().css('opacity', '0');
+  });
+
+  $('.btn4 a').mouseenter(function(){
+    $('.sec3_cricleimg>img').attr('src', './img/source/CAN_open_3.png');
+    $('.p_list').stop().css('opacity', '0');
+  });
+
+  $('.btn5 a').mouseenter(function(){
+    $('.sec3_cricleimg>img').attr('src', './img/source/CAN_open_5.png');
+    $('.p_list').stop().css('opacity', '0');
+  });
+  
 
   $('.swiper-button a').mouseleave(function(){
     $('.sec3_cricleimg>img').attr('src', './img/source/CAN_SOURCE1.png');

@@ -19,7 +19,6 @@ html,
 body {
   position: relative;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -153,7 +152,7 @@ header a {
 
 .sec1 h2 strong::before {
     content: "";
-    background-image: url(../img/source/canhead01.png);
+    background-image: url(../../img/source/canhead02.png);
     background-size: 30px;
     background-repeat: no-repeat;
     width: 30px;

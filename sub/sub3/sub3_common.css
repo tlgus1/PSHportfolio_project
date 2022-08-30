@@ -19,10 +19,10 @@ html,
 body {
   position: relative;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;  
   background-color: #faede7;
   font-family: "Pretendard-Regular";
 }
@@ -64,9 +64,6 @@ header .hd_txt {
     justify-content: center;
     text-align: center;
     position: relative;
-}
-
-header .hd_img {
 }
 
 .hd_img img {
@@ -153,7 +150,7 @@ header a {
 
 .sec1 h2 strong::before {
     content: "";
-    background-image: url(../img/source/canhead01.png);
+    background-image: url(../../img/source/canhead01.png);
     background-size: 30px;
     background-repeat: no-repeat;
     width: 30px;

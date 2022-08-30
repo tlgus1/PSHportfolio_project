@@ -6,3 +6,6 @@ $(function(){
     })
   })
   
+  $(function(){
+    AOS.init();
+})
