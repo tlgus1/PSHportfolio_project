@@ -64,9 +64,14 @@ header .hd_txt {
     justify-content: center;
     text-align: center;
     position: relative;
+    overflow-x: hidden;
 }
 
-header .hd_img {
+.hd_img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .hd_img img {
@@ -322,6 +327,7 @@ header a {
 
 .sec3 {
     padding: 7rem 0;
+    overflow-x: hidden;
 }
 
 .sec3 h2 {

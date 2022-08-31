@@ -22,9 +22,10 @@ body {
 }
 
 body {
-  background-color: #faede7;
-  font-family: "Pretendard-Regular";
-  overflow-x: hidden;
+    background-color: #faede7;
+    font-family: "Pretendard-Regular";
+    width: 100%;
+    overflow-x: hidden !important;
 }
 
 :root {
@@ -52,6 +53,7 @@ body {
     bottom: 5%;
     right: 5%;
     cursor: pointer;
+    z-index: 100;
   }
 
 
@@ -66,8 +68,13 @@ header .hd_txt {
     position: relative;
 }
 
-header .hd_img {
+.hd_img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
+
 
 .hd_img img {
     width: 100%;
@@ -319,6 +326,7 @@ header a {
 
 .sec3 {
     padding: 7rem 0;
+    overflow-x: hidden;
 }
 
 .sec3 h2 {
