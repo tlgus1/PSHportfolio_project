@@ -5,7 +5,18 @@ setTimeout(function(){
   $('.doorimg img').stop().attr('src', './img/source/door2.png')
 },3000)
 
+if(matchMedia("screen and (max-width:900px)").matches){
+  setTimeout(function(){
+    $('.doorimg').stop().css('left', '55%')
+    $('.doorimg img').stop().attr('src', './img/source/door2.png')
+  },3000)
 
+} else {
+  setTimeout(function(){
+    $('.doorimg').stop().css('left', '52.5%')
+    $('.doorimg img').stop().attr('src', './img/source/door2.png')
+  },3000)
+}
 
 
 // swiper
@@ -84,18 +95,34 @@ AOS.init({
 
 // toggle
 
+if(matchMedia("screen and (max-width:900px)").matches){
+  $(function(){
+    $('header button').click(function(){
+      $('.toggle_back').css('display','block')
+      $('.toggle').animate({right:0})
+    })
+  
+    $('.tog_close').click(function(){
+      $('.toggle').animate({right:'-50%'})
+      $('.toggle_back').css('display','none')
+    })
+  })  
 
-$(function(){
-  $('header button').click(function(){
-    $('.toggle_back').css('display','block')
-    $('.toggle').animate({right:0})
+} else {
+  $(function(){
+    $('header button').click(function(){
+      $('.toggle_back').css('display','block')
+      $('.toggle').animate({right:0})
+    })
+  
+    $('.tog_close').click(function(){
+      $('.toggle').animate({right:'-30%'})
+      $('.toggle_back').css('display','none')
+    })
   })
+  
+}
 
-  $('.tog_close').click(function(){
-    $('.toggle').animate({right:'-30%'})
-    $('.toggle_back').css('display','none')
-  })
-})
 
 // scroll block
 
