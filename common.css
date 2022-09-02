@@ -168,7 +168,7 @@ header h1 strong {
   display: block;
 }
 
-header h1 p {
+header h1 span {
   font-size: 3rem;
   padding: 0.2rem;
   padding-bottom: 1rem;
@@ -1335,6 +1335,18 @@ footer .fot_token {
 }
 
 @media(max-width:700px){
+  footer {
+    padding: 2rem;
+    text-align: center;
+  }
+
+}
+
+@media(max-width:500px){
+  .sec4_txt > a {
+    width: 50vw;
+  }
+
   footer {
     padding: 2rem;
     text-align: center;

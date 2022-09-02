@@ -235,6 +235,10 @@ header a {
     .sec1_list>li div strong::before {
         width: 50vw;
     }
+
+    .sec1 h2 p br{
+        display: none;
+    }
 }
 
 /* sec2 */
@@ -302,6 +306,14 @@ header a {
 .sec2 ul li .sec2list_img img {
     width: 80%;
 }
+
+@media(max-width:900px){
+    .sec2 ul li {
+        width: 48%;
+    }
+}
+
+
 
 @media(max-width:700px){
     .sec2 {
@@ -407,6 +419,7 @@ header a {
     justify-content: center;
     align-items: center;
 }
+
 
 @media(max-width:700px){
     .sec3 {

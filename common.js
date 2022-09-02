@@ -150,12 +150,3 @@ $(function(){
     },1000)
   })
 })
-
-gsap.to(".topbutton", {
-  duration: 2,
-  scrollTrigger: {
-    trigger: ".topbutton",
-    start: "top 20%",
-    toggleClass: "colorCH",
-  }
-});

@@ -228,6 +228,10 @@ header a {
         line-height: 1.5;
     }
 
+    .sec1 h2 p br{
+        display: none;
+    }
+
     .sec1_list>li div strong::before {
         width: 50vw;
     }
