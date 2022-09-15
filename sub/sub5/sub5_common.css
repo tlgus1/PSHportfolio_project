@@ -53,6 +53,104 @@ body {
     cursor: pointer;
   }
 
+/* toggle */
+
+.wrapper>button {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    background-color: transparent;
+    border: transparent;
+}
+
+.wrapper>button i {
+    font-size: 2rem;
+}
+
+.toggle {
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    width: 30%;
+    height: 100vh;
+    background-color: var(--back);
+    text-align: left;
+    font-size: 1.2rem;
+    right: -30%;
+  }
+  
+  .toggle_back {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    display: none;
+  }
+  
+  .toggle ul {
+    padding: 6rem 4rem;
+  }
+  
+  .toggle ul li {
+    margin-bottom: 3rem;
+  }
+  
+  .toggle ul li a {
+    color: var(--main);
+  }
+  
+  .tog_close {
+    border: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    text-align: right;
+    color: var(--main);
+    padding: 3rem 6rem;
+  }
+  
+  .tog_close i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    right: 4rem;
+  }
+  
+  .topbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--back);
+    background-color: var(--main);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 50;
+  }
+  
+  @media(max-width:900px) {
+    .toggle {
+      width: 70%;
+      right: -70%;
+    }
+
+    .toggle ul {
+        padding: 2rem;
+    }
+
+    .tog_close {
+        padding: 2.5rem 1.5rem;
+    }
+  }
+
 
 /* header */
 
@@ -108,8 +206,16 @@ header .hd_txt {
     color: white;
 }
 
-header a {
-    display: block;
+.linkbtn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+header .linkbtn a {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     width: 100px;
     height: 30px;
     border-radius: 50px;
