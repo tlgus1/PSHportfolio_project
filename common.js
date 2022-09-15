@@ -103,7 +103,7 @@ if(matchMedia("screen and (max-width:900px)").matches){
     })
   
     $('.tog_close').click(function(){
-      $('.toggle').animate({right:'-50%'})
+      $('.toggle').animate({right:'-70%'})
       $('.toggle_back').css('display','none')
     })
   })  
@@ -128,7 +128,7 @@ if(matchMedia("screen and (max-width:900px)").matches){
 
 $(function(){
   $('header button').click(function(){
-    $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+    $('body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
     $('.toggle').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지
     event.preventDefault();
     event.stopPropagation();
@@ -138,7 +138,7 @@ $(function(){
   })
 
   $('.tog_close').click(function(){
-    $('html, body').css({'overflow': 'visible', 'height': '100%'});
+    $('body').css({'overflow': 'visible', 'height': '100%'});
     $('.toggle').off('scroll touchmove mousewheel');
   })
 })
